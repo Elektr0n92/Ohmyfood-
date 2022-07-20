@@ -1,0 +1,38 @@
+* ::before ::after {
+  box-sizing: border-box;
+}
+
+.Site {
+ 
+}
+
+/* First Preview */
+
+.first-preview
+{
+    display: flex;
+    flex-direction: column; 
+     
+}
+
+.first-preview_logo
+{
+    display: flex;
+    justify-content: center;
+}
+
+.first-preview_logo img
+{
+    width: 200px;
+}
+
+
+.first-preview_search {
+  background-color: silver;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  
+}
+
