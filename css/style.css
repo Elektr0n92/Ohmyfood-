@@ -3,29 +3,24 @@
 }
 
 .Site {
- 
 }
 
 /* First Preview */
 
-.first-preview
-{
-    display: flex;
-    flex-direction: column; 
-     
+.first-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.first-preview_logo
-{
-    display: flex;
-    justify-content: center;
+.first-preview_logo {
+  display: flex;
+  justify-content: center;
 }
 
-.first-preview_logo img
-{
-    width: 200px;
+.first-preview_logo img {
+  width: 200px;
 }
-
 
 .first-preview_search {
   background-color: silver;
@@ -33,6 +28,5 @@
   display: flex;
   justify-content: center;
   gap: 16px;
-  
+  width: 100%;
 }
-
