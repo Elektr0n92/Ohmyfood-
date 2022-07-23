@@ -81,11 +81,13 @@ body{
 .first-preview_btn{
     height: 40px;    
     border-radius: 45px;
+    border-color: inherit;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    background-color: #9356DC;
+    background: linear-gradient(#FF79DA, #9356DC);
     color: white;
     padding: 29px;
+    box-shadow: 0px 0px 14px 0px #9356DC;
 }
