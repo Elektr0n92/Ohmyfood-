@@ -4,8 +4,8 @@
   "description": "Ceci est un projet pour ma Formation d'openclassrooms",
   "main": "index.js",
   "scripts": {
-    "sass": "sass ./sass/main.scss:./public/css/style.css",
-    "sass:watch": "sass --watch ./sass/main.scss:./public/css/style.css"
+    "build": "sass ./sass/main.scss:./public/css/style.css",
+    "build:dev": "sass --watch ./sass/main.scss:./public/css/style.css"
   },
   "author": "Timothé Lauvernier",
   "devDependencies": {
