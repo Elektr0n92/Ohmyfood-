@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2? famille=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-
- * ::before ::after {
+* ::before ::after {
   box-sizing: border-box;
 }
 
@@ -13,9 +12,10 @@ body {
 
 h1,
 h2 {
-  font-family: "Shrikhand", cursive;
+  font-family: "Roboto", cursive;
   font-size: xxx-large;
   margin: 0;
+  font-weight: 900;
 }
 
 p {
@@ -128,10 +128,11 @@ p {
 
 .funct-main,
 .rest-main {
-  padding: 60px 10px 60px 10px;
+  padding: 60px 50px 60px 50px;
   gap: 40px;
   height: 100%;
 }
+
 /* FUNCT MAIN */
 
 .funct-main {
@@ -140,13 +141,18 @@ p {
   flex-flow: column nowrap;
   align-items: center;
 
+  &__title {
+    display: flex;
+    align-self: baseline;
+  }
+
   &__contain {
     display: flex;
     flex-flow: row nowrap;
     width: 100%;
     align-items: center;
     height: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   &__block {
