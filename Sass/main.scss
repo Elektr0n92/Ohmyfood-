@@ -64,8 +64,6 @@ p {
   &__search {
     display: flex;
     gap: 17px;
-    position: relative;
-    left: 40px;
     align-items: center;
 
     & ::placeholder {
@@ -78,6 +76,7 @@ p {
       border: none;
       background-color: inherit;
       font-size: large;
+      width: 150px;
     }
   }
 
@@ -216,11 +215,11 @@ p {
   &__block {
     display: flex;
     flex-flow: column nowrap;
-    width: 45%;
     height: 350px;
     gap: 10px;
     box-shadow: 0px 0px 15px 0px #000000;
     border-radius: 10px;
+    flex: 1 0 47%;
   }
 
   &__pic{
@@ -270,6 +269,6 @@ p {
     height: 100%;
     width: 100%;
     justify-content: space-between;
-    row-gap: 100px;
+    gap: 50px;
   }
 }

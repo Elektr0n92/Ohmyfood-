@@ -59,8 +59,6 @@ p {
 .first-preview__search {
   display: flex;
   gap: 17px;
-  position: relative;
-  left: 40px;
   align-items: center;
 }
 .first-preview__search ::placeholder {
@@ -72,6 +70,7 @@ p {
   border: none;
   background-color: inherit;
   font-size: large;
+  width: 150px;
 }
 .first-preview__sc {
   background-color: whitesmoke;
@@ -192,11 +191,11 @@ p {
 .rest-main__block {
   display: flex;
   flex-flow: column nowrap;
-  width: 45%;
   height: 350px;
   gap: 10px;
   box-shadow: 0px 0px 15px 0px #000000;
   border-radius: 10px;
+  flex: 1 0 47%;
 }
 .rest-main__pic {
   width: 100%;
@@ -239,7 +238,7 @@ p {
   height: 100%;
   width: 100%;
   justify-content: space-between;
-  row-gap: 100px;
+  gap: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */
