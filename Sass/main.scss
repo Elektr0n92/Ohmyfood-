@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2? famille=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700;900&display=swap");
 
 * ::before ::after {
   box-sizing: border-box;
@@ -148,22 +148,25 @@ p {
 
   &__contain {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     width: 100%;
     align-items: center;
     height: 100%;
-    justify-content: space-between;
+    gap: 50px;
   }
 
   &__block {
-    width: 30%;
-    height: 200px;
+    flex: 1 0 30%;
+    height: 155px;
     background: #f6f6f6;
     display: flex;
     align-items: center;
+    justify-content: center;
     position: relative;
     box-shadow: 0px 0px 5px 0px #000000;
     border-radius: 40px;
+    gap: 20px;
+    padding: 0 5px 0 15px;
 
     &--purple {
       background: RGBA(147, 86, 220, 0.1);
@@ -184,12 +187,8 @@ p {
   }
 
   &__ico {
-    display: flex;
-    height: auto;
-    align-items: center;
+    display: inline-flex;
     font-size: 45px;
-    position: absolute;
-    left: 15%;
 
     &--shop {
       color: #9356dc;
@@ -197,10 +196,7 @@ p {
   }
 
   &__choose {
-    position: absolute;
-    left: 30%;
-    margin: 0 5px 0 20px;
-    text-align: center;
+    margin: 0;
   }
 }
 
@@ -222,11 +218,11 @@ p {
     flex: 1 0 47%;
   }
 
-  &__pic{
+  &__pic {
     width: 100%;
     height: 73%;
 
-    img{
+    img {
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -238,7 +234,7 @@ p {
     align-self: baseline;
   }
 
-  &__descr{
+  &__descr {
     padding: 0 10px 0 10px;
     display: flex;
     flex-flow: column nowrap;
@@ -251,12 +247,12 @@ p {
     font-weight: 900;
   }
 
-  &__name{
+  &__name {
     margin: 0;
     font-weight: 400;
   }
 
-  &__icoheart{
+  &__icoheart {
     position: absolute;
     align-self: flex-end;
     top: 50%;

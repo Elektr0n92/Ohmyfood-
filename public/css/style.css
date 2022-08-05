@@ -132,21 +132,24 @@ p {
 }
 .funct-main__contain {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   width: 100%;
   align-items: center;
   height: 100%;
-  justify-content: space-between;
+  gap: 50px;
 }
 .funct-main__block {
-  width: 30%;
-  height: 200px;
+  flex: 1 0 30%;
+  height: 155px;
   background: #f6f6f6;
   display: flex;
   align-items: center;
+  justify-content: center;
   position: relative;
   box-shadow: 0px 0px 5px 0px #000000;
   border-radius: 40px;
+  gap: 20px;
+  padding: 0 5px 0 15px;
 }
 .funct-main__block--purple {
   background: RGBA(147, 86, 220, 0.1);
@@ -164,21 +167,14 @@ p {
   color: white;
 }
 .funct-main__ico {
-  display: flex;
-  height: auto;
-  align-items: center;
+  display: inline-flex;
   font-size: 45px;
-  position: absolute;
-  left: 15%;
 }
 .funct-main__ico--shop {
   color: #9356dc;
 }
 .funct-main__choose {
-  position: absolute;
-  left: 30%;
-  margin: 0 5px 0 20px;
-  text-align: center;
+  margin: 0;
 }
 
 /* REST MAIN */
