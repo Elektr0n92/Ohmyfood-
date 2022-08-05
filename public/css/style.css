@@ -8,6 +8,7 @@
 body {
   margin-left: 0;
   margin-right: 0;
+  margin-bottom: 0;
 }
 
 h1,
@@ -15,7 +16,7 @@ h2 {
   font-family: "Roboto", cursive;
   font-size: xxx-large;
   margin: 0;
-  font-weight: 900;
+  font-weight: 600;
 }
 
 p {
@@ -26,7 +27,6 @@ p {
 .Site {
   display: flex;
   flex-flow: column;
-  gap: 40px;
 }
 
 /* First Preview */
@@ -88,6 +88,9 @@ p {
 .first-preview__reserve h1 {
   margin: 0;
 }
+.first-preview__decouvre {
+  color: dimgray;
+}
 .first-preview__btn {
   height: 40px;
   border-radius: 45px;
@@ -114,7 +117,7 @@ p {
 
 .funct-main,
 .rest-main {
-  padding: 60px 70px 60px 70px;
+  padding: 60px 100px 60px 100px;
   gap: 40px;
   height: 100%;
 }
@@ -154,6 +157,9 @@ p {
 .funct-main__block--purple {
   background: RGBA(147, 86, 220, 0.1);
 }
+.funct-main__block p {
+  font-weight: 600;
+}
 .funct-main__num {
   background-color: #9356dc;
   display: flex;
@@ -169,6 +175,7 @@ p {
 .funct-main__ico {
   display: inline-flex;
   font-size: 45px;
+  color: #949494;
 }
 .funct-main__ico--shop {
   color: #9356dc;
@@ -235,6 +242,12 @@ p {
   width: 100%;
   justify-content: space-between;
   gap: 50px;
+}
+
+/* LAST PREVIEW */
+.last-preview {
+  background-color: #353535;
+  height: 200px;
 }
 
 /*# sourceMappingURL=style.css.map */
