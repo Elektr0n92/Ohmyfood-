@@ -14,7 +14,7 @@ body {
 h1,
 h2 {
   font-family: "Roboto", cursive;
-  font-size: xxx-large;
+  font-size: 50px;
   margin: 0;
   font-weight: 600;
 }
@@ -247,7 +247,28 @@ p {
 /* LAST PREVIEW */
 .last-preview {
   background-color: #353535;
-  height: 200px;
+  padding: 20px 100px 40px 100px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.last-preview__title {
+  color: white;
+  font-size: 40px;
+  font-family: "Shrikhand", cursive;
+}
+.last-preview__list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.last-preview__list li {
+  list-style-type: none;
+  font-size: 30px;
+  color: white;
+  padding: 10px;
+}
+.last-preview__ico {
+  padding-right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
