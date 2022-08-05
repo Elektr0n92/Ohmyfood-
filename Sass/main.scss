@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2? famille=Shrikhand&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700;900&display=swap');
 
 * ::before ::after {
   box-sizing: border-box;
@@ -241,8 +241,6 @@ p {
   }
 
   &__new {
-    height: 50px;
-    width: 100px;
     position: absolute;
     background-color: #99e2d0;
     right: 0;
@@ -250,9 +248,12 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px;
 
     p {
-      color: darkgreen;
+      color: #30a387;
+      margin: 0;
+      font-weight: 900;
     }
   }
 
@@ -306,7 +307,8 @@ p {
   &__title {
     color: white;
     font-size: 40px;
-    font-family: "Shrikhand", cursive;
+    font-family: 'Shrikhand', cursive;
+    font-weight: normal;
   }
 
   &__list {
@@ -326,3 +328,4 @@ p {
     padding-right: 10px;
   }
 }
+
