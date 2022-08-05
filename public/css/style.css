@@ -203,12 +203,27 @@ p {
 .rest-main__pic {
   width: 100%;
   height: 73%;
+  position: relative;
 }
 .rest-main__pic img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
+}
+.rest-main__new {
+  height: 50px;
+  width: 100px;
+  position: absolute;
+  background-color: #99e2d0;
+  right: 0;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rest-main__new p {
+  color: darkgreen;
 }
 .rest-main__title {
   align-self: baseline;
