@@ -10,5 +10,17 @@
   "author": "Timothé Lauvernier",
   "devDependencies": {
     "sass": "^1.54.0"
-  }
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Elektr0n92/Ohmyfood-.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Elektr0n92/Ohmyfood-/issues"
+  },
+  "homepage": "https://github.com/Elektr0n92/Ohmyfood-#readme"
 }

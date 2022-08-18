@@ -1,0 +1,84 @@
+/* COLOR */
+
+@mixin lightness($color){
+    background: $color;
+
+    &:hover{
+    background: functlight($color);
+    }
+}
+
+/* GRADIENT */
+
+@mixin gradient ($color1, $color2) {
+    background: linear-gradient($color1, $color2);
+}
+
+@mixin gradient-btn{
+    background: linear-gradient($pink-btn, $purple-btn);
+   
+}
+
+@mixin gradient-nav{
+    background: linear-gradient(whitesmoke, silver);
+}
+
+/* FONT */
+
+@mixin font($font: $roboto){
+    font-family: $font;
+}
+
+/* SHADOW */
+
+@mixin shadow-btn{
+    box-shadow: 0px 6px 13px 0px rgba(0,0,0,0.16);
+}
+
+ @mixin shadow-card{
+    box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.52);
+ }
+
+ /* FLEXBOX */
+
+ @mixin flex-center ($direction: initial){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: $direction;
+}
+
+@mixin flex($align: initial, $justify: initial, $direction: initial){
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-direction: $direction;
+}
+
+/* MEDIA QUERRIE */
+
+@mixin desktop-norm {
+    @media screen and (max-width: map-get($breakpoints, desktop-norm)){
+        @content;
+    }
+  }
+
+@mixin tab-vp {
+    @media screen and (max-width: map-get($breakpoints, tab)){
+        @content;
+    }
+  }
+
+@mixin mobile-small-vp {
+    @media screen and (max-width: map-get($breakpoints, mobile-small)){
+        @content;
+        
+    }        
+}
+
+@mixin mobile-vp {
+    @media screen and (max-width: map-get($breakpoints, mobile)){
+        @content;
+        
+    }        
+}

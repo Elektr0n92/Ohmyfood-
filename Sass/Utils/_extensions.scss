@@ -1,0 +1,7 @@
+%global-flex-center{
+    @include flex($justify: center);
+}
+
+%global-flex-allcenter{
+    @include flex-center;
+}

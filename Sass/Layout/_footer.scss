@@ -1,0 +1,43 @@
+.last-preview {
+    background-color: $black-end;
+    padding: 20px 100px 40px 100px;
+    display: flex;
+    flex-flow: column nowrap;
+    @include tab-vp{
+      padding: 20px 50px 40px 50px;
+    }
+    @include mobile-small-vp{
+      padding: 20px 30px 40px 30px;
+    }
+  
+    &__title {
+      color: white;
+      font-size: clamped(20px, 40px, 500px, 2560px);
+      font-family: "Shrikhand", cursive;
+      font-weight: normal;
+    }
+  
+    &__list {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: center;
+      @include mobile-vp{
+        justify-content: baseline;
+        flex-flow: column nowrap;
+        align-items: flex-start;
+        padding: 0;
+      }
+  
+      li {
+        list-style-type: none;
+        font-size:clamped(15px, 30px, 500px, 2560px);
+        color: white;
+        padding: 10px;
+      }
+    }
+  
+    &__ico {
+      padding-right: 10px;
+    }
+  }

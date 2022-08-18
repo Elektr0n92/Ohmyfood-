@@ -1,125 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700;900&display=swap");
 
-@import "variables.scss";
-
-* ::before ::after {
-  box-sizing: border-box;
-}
-
-body {
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom: 0;
-}
+@import "Utils/mixin";
+@import "Utils/variables";
+@import "Utils/functions";
+@import "Utils/breakpoints";
+@import "Layout/header";
+@import "Layout/footer";
+@import "Base/base";
+@import "Base/typography";
 
 h1,
 h2 {
-  font-family: "Roboto", cursive;
-  font-size: 50px;
+  @include font;
+  font-size: 40px;
   margin: 0;
   font-weight: 600;
+  font-size: clamp(1.25rem, 0.9466rem + 0.9709vw, 2.5rem);
 }
 
-p {
-  font-family: "Roboto", sans-serif;
-  font-size: x-large;
-}
-
-.Site {
-  display: flex;
-  flex-flow: column;
-}
-
-/* First Preview */
-
-.first-preview {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-
-  &__intro {
-    width: 100%;
-    gap: 16px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  &__logo {
-    display: flex;
-    justify-content: center;
-    img {
-      width: 280px;
-    }
-  }
-
-  &__navigation {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    background: linear-gradient(whitesmoke, silver);
-    box-shadow: rgb(0 0 0 / 50%) 0px -2px 5px 0px;
-  }
-
-  &__search {
-    display: flex;
-    gap: 17px;
-    align-items: center;
-
-    & ::placeholder {
-      color: black;
-      font-weight: bolder;
-      width: 100%;
-    }
-
-    input {
-      border: none;
-      background-color: inherit;
-      font-size: large;
-      width: 150px;
-    }
-  }
-
-  &__sc {
-    background-color: whitesmoke;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 40px 0 40px 0;
-    gap: 20px;
-
-    a {
-      text-decoration: none;
-    }
-  }
-
-  &__reserve {
-    h1 {
-      margin: 0;
-    }
-  }
-
-  &__decouvre {
-    color: dimgray;
-  }
-  &__btn {
-    height: 40px;
-    border-radius: 45px;
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    box-shadow: 0px 0px 5px 0px #000000;
-    color: white;
-    padding: 29px;
-    font-size: 20px;
-    @include gradient-btn
-  }
+p, .first-preview__btn {
+  @include font;
+  font-size: clamp(0.75rem, 0.568rem + 0.5825vw, 1.5rem);
 }
 
 /* FUNCT MAIN & REST MAIN */
@@ -130,6 +33,9 @@ p {
   flex-flow: column nowrap;
   height: 100%;
   gap: 40px;
+  @include tab-vp{
+    gap: 20px;
+  }
 }
 
 .funct-main,
@@ -137,6 +43,13 @@ p {
   padding: 60px 100px 60px 100px;
   gap: 40px;
   height: 100%;
+  @include tab-vp{
+    padding: 60px 50px 60px 50px;
+  }
+
+  @include mobile-small-vp{
+    padding: 60px 30px 60px 30px;
+  }
 }
 
 /* FUNCT MAIN */
@@ -158,48 +71,65 @@ p {
     width: 100%;
     align-items: center;
     height: 100%;
-    gap: 50px;
+    justify-content: space-between;
+    @include tab-vp{
+      flex-direction: column;
+      align-items: baseline;
+      gap: 50px;
+    }
   }
 
   &__block {
-    flex: 1 0 30%;
-    height: 155px;
+    flex: 0 0 30%;
+    height: 100px;
     background: #f6f6f6;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: relative;
-    box-shadow: 0px 0px 5px 0px #000000;
-    border-radius: 40px;
+    border-radius: 25px;
     gap: 20px;
-    padding: 0 5px 0 15px;
-
+    padding-right: 15px;
+    text-align: center;
+    @include shadow-btn;
+    @include flex-center;
+    @include lightness($little-white);
+    @include tab-vp{
+      justify-content: flex-start;
+      width: 100%;
+      flex-basis: auto;
+      text-align: unset;
+      height: 80px;
+    
+    }
+    
     &--purple {
-      background: $little-pink;
+      @include lightness($little-pink);
     }
 
     p {
       font-weight: 600;
+      padding-right: 12px;
     }
   }
 
   &__num {
     background-color: $purple-btn;
-    display: flex;
     width: 30px;
     height: 30px;
     border-radius: 100%;
-    align-items: center;
-    justify-content: center;
     position: absolute;
     left: -15px;
     color: white;
+    font-size:clamped(15px, 20px, 500px, 2560px);
+    @include flex-center;
   }
 
   &__ico {
     display: inline-flex;
-    font-size: 45px;
+    font-size:clamped(22px, 45px, 500px, 2560px);
     color: #949494;
+    padding-left: 20px;
+    @include tab-vp{
+      padding-left: 40px;
+    }
 
     &--shop {
       color: $purple-btn;
@@ -223,15 +153,18 @@ p {
     display: flex;
     flex-flow: column nowrap;
     height: 350px;
-    gap: 10px;
     box-shadow: 0px 0px 15px 0px #000000;
     border-radius: 10px;
     flex: 1 0 47%;
+    @include tab-vp{
+      height: 255px;
+    }
+
   }
 
   &__pic {
     width: 100%;
-    height: 73%;
+    height:73%;
     position: relative;
 
     img {
@@ -239,6 +172,7 @@ p {
       height: 100%;
       object-fit: cover;
       border-radius: 10px 10px 0 0;
+      object-position: 50% 57%;
     }
   }
 
@@ -247,9 +181,7 @@ p {
     background-color: #99e2d0;
     right: 0;
     margin: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     padding: 10px;
 
     p {
@@ -269,16 +201,19 @@ p {
     flex-flow: column nowrap;
     gap: 8px;
     position: relative;
+    justify-content: center;
+    height: 100%;
   }
 
   &__subtitle {
-    font-size: xx-large;
+    font-size:clamped(15px, 30px, 500px, 2560px);
     font-weight: 900;
   }
 
   &__name {
     margin: 0;
     font-weight: 400;
+    font-size:clamped(12px, 24px, 500px, 2560px);
   }
 
   &__icoheart {
@@ -287,7 +222,23 @@ p {
     top: 50%;
     margin-top: -14px;
     font-size: 2em;
+    
+    &:hover {
+      .fa-regular.fa-heart{
+        font-weight: bolder;
+        background: linear-gradient(90deg,$pink-btn, $purple-btn);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+        cursor: pointer;
+ 
+
+      }
+    }
+  
   }
+  
   &__contain {
     display: flex;
     flex-flow: row wrap;
@@ -295,39 +246,6 @@ p {
     width: 100%;
     justify-content: space-between;
     gap: 50px;
-  }
-}
-
-/* LAST PREVIEW */
-
-.last-preview {
-  background-color: $black-end;
-  padding: 20px 100px 40px 100px;
-  display: flex;
-  flex-flow: column nowrap;
-
-  &__title {
-    color: white;
-    font-size: 40px;
-    font-family: 'Shrikhand', cursive;
-    font-weight: normal;
-  }
-
-  &__list {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-
-    li {
-      list-style-type: none;
-      font-size: 30px;
-      color: white;
-      padding: 10px;
-    }
-  }
-
-  &__ico {
-    padding-right: 10px;
   }
 }
 

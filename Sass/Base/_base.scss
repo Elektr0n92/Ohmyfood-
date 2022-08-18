@@ -1,0 +1,16 @@
+* ::before ::after {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+
+  }
+  
+  .Site {
+    display: flex;
+    flex-flow: column;  
+  }
+  
