@@ -11,6 +11,7 @@
 @import "Base/base";
 @import "Base/typography";
 
+
 h1,
 h2 {
   @include font;
@@ -36,6 +37,10 @@ p, .first-preview__btn {
   @include tab-vp{
     gap: 20px;
   }
+
+  &__menu{
+    position: relative;
+  }
 }
 
 .funct-main,
@@ -51,6 +56,23 @@ p, .first-preview__btn {
     padding: 60px 30px 60px 30px;
   }
 }
+
+/* Menu */
+
+.main-menu__contain{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: whitesmoke;
+  padding: 10px;
+  border-radius: 97px 93px 0px 49px;
+
+  h2{
+    font-family: $shrik;
+  }
+}
+
+
 
 /* FUNCT MAIN */
 
@@ -168,9 +190,7 @@ p, .first-preview__btn {
     position: relative;
 
     img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+      @include picsize;
       border-radius: 10px 10px 0 0;
       object-position: 50% 57%;
     }

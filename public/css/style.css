@@ -5,6 +5,7 @@
 /* GRADIENT */
 /* FONT */
 /* SHADOW */
+/* IMG */
 /* FLEXBOX */
 /* MEDIA QUERRIE */
 /* color */ /* First Preview */
@@ -20,6 +21,15 @@
   gap: 16px;
   display: flex;
   flex-direction: column;
+}
+.first-preview__picture {
+  height: 400px;
+  width: 100%;
+}
+.first-preview__picture img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 .first-preview__logo {
   display: flex;
@@ -182,6 +192,9 @@ p, .first-preview__btn {
     gap: 20px;
   }
 }
+.group-main__menu {
+  position: relative;
+}
 
 .funct-main,
 .rest-main {
@@ -200,6 +213,19 @@ p, .first-preview__btn {
 .rest-main {
     padding: 60px 30px 60px 30px;
   }
+}
+
+/* Menu */
+.main-menu__contain {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: whitesmoke;
+  padding: 10px;
+  border-radius: 97px 93px 0px 49px;
+}
+.main-menu__contain h2 {
+  font-family: "Shrikhand", cursive;
 }
 
 /* FUNCT MAIN */
@@ -324,9 +350,9 @@ p, .first-preview__btn {
   position: relative;
 }
 .rest-main__pic img {
-  width: 100%;
-  height: 100%;
   object-fit: cover;
+  height: 100%;
+  width: 100%;
   border-radius: 10px 10px 0 0;
   object-position: 50% 57%;
 }

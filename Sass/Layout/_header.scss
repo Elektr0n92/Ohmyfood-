@@ -9,7 +9,16 @@
       display: flex;
       flex-direction: column;
     }
-  
+    
+    &__picture{
+      height: 400px;
+      width: 100%;
+    
+      img{
+        @include picsize;
+      }
+    }
+
     &__logo {
       @include flex-center;
       img {
