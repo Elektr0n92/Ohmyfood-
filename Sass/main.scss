@@ -224,10 +224,12 @@ p, .first-preview__btn {
     font-size: 2em;
     
     &:hover {
-      .fa-regular.fa-heart{
+      .fa-regular{
         font-weight: bolder;
-        background: linear-gradient(90deg,$pink-btn, $purple-btn);
+        font-family: "Font Awesome 6 Free";
+        background: linear-gradient(90deg, $pink-btn, $purple-btn);
         background-clip: text;
+        -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         -moz-background-clip: text;
         -moz-text-fill-color: transparent;

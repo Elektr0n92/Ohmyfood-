@@ -374,10 +374,12 @@ p, .first-preview__btn {
   margin-top: -14px;
   font-size: 2em;
 }
-.rest-main__icoheart:hover .fa-regular.fa-heart {
+.rest-main__icoheart:hover .fa-regular {
   font-weight: bolder;
+  font-family: "Font Awesome 6 Free";
   background: linear-gradient(90deg, #ff79da, #9356dc);
   background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
