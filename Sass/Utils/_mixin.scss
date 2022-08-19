@@ -47,6 +47,27 @@
     width: 100%;
  }
  
+ /* BLOCK */
+
+ @mixin block{
+    width: 100%;
+    height: 150px;
+    background: #f6f6f6;
+    position: relative;
+    border-radius: 25px;
+    align-items: center;
+    display: flex;
+    @include shadow-btn;
+    @include lightness($little-white);
+    @include tab-vp{
+      justify-content: flex-start;
+      width: 100%;
+      flex-basis: auto;
+      text-align: unset;
+      height: 80px;
+    }
+ }
+ 
  /* FLEXBOX */
 
  @mixin flex-center ($direction: initial){

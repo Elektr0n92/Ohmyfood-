@@ -38,9 +38,6 @@ p, .first-preview__btn {
     gap: 20px;
   }
 
-  &__menu{
-    position: relative;
-  }
 }
 
 .funct-main,
@@ -59,20 +56,45 @@ p, .first-preview__btn {
 
 /* Menu */
 
-.main-menu__contain{
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+.main-menu{
   background: whitesmoke;
-  padding: 10px;
-  border-radius: 97px 93px 0px 49px;
+  position: relative;
+  bottom: 56px;
+  border-radius: 50px 50px 0px 0px;
 
-  h2{
+  &__contain{
+    width: -webkit-fill-available;
+    background: whitesmoke;
+    padding: 23px 20px 20px 20px;
+    border-radius: 50px 50px 0px 0px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+
+  }
+
+  &__first-title{
     font-family: $shrik;
   }
+
+  &__entrée{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 40px;
+
+    p{
+      margin: 0;
+    }
+  
+  }
+
+  &__block{
+    @include block;
+    align-items: center;
+    justify-content: center; 
+    flex-flow: column nowrap;
+  }
 }
-
-
 
 /* FUNCT MAIN */
 
@@ -129,6 +151,10 @@ p, .first-preview__btn {
     p {
       font-weight: 600;
       padding-right: 12px;
+    }
+  
+    &--menu{
+      flex: auto;
     }
   }
 
@@ -228,6 +254,10 @@ p, .first-preview__btn {
   &__subtitle {
     font-size:clamped(15px, 30px, 500px, 2560px);
     font-weight: 900;
+  
+    &--menu{
+      font-family: $roboto;
+    }
   }
 
   &__name {
