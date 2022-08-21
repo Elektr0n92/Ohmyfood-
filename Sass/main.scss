@@ -11,6 +11,7 @@
 @import "Base/base";
 @import "Base/typography";
 
+
 h1,
 h2 {
   @include font;
@@ -36,6 +37,7 @@ p, .first-preview__btn {
   @include tab-vp{
     gap: 20px;
   }
+
 }
 
 .funct-main,
@@ -49,6 +51,48 @@ p, .first-preview__btn {
 
   @include mobile-small-vp{
     padding: 60px 30px 60px 30px;
+  }
+}
+
+/* Menu */
+
+.main-menu{
+  background: whitesmoke;
+  position: relative;
+  margin-top: -70px;
+  border-radius: 50px 50px 0px 0px;
+
+  &__contain{
+    width: -webkit-fill-available;
+    background: whitesmoke;
+    padding: 23px 20px 20px 20px;
+    border-radius: 50px 50px 0px 0px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+
+  }
+
+  &__first-title{
+    font-family: $shrik;
+  }
+
+  &__entrée{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 40px;
+
+    p{
+      margin: 0;
+    }
+  
+  }
+
+  &__block{
+    @include block;
+    align-items: center;
+    justify-content: center; 
+    flex-flow: column nowrap;
   }
 }
 
@@ -107,6 +151,10 @@ p, .first-preview__btn {
     p {
       font-weight: 600;
       padding-right: 12px;
+    }
+  
+    &--menu{
+      flex: auto;
     }
   }
 
@@ -168,9 +216,7 @@ p, .first-preview__btn {
     position: relative;
 
     img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+      @include picsize;
       border-radius: 10px 10px 0 0;
       object-position: 50% 57%;
     }
@@ -208,6 +254,10 @@ p, .first-preview__btn {
   &__subtitle {
     font-size:clamped(15px, 30px, 500px, 2560px);
     font-weight: 900;
+  
+    &--menu{
+      font-family: $roboto;
+    }
   }
 
   &__name {
