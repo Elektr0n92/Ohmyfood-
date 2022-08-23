@@ -1,119 +1,128 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link rel="stylesheet" type="text/css" href="public/css/style.css" />
-    <script
-      src="https://kit.fontawesome.com/0e8b9428cb.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Ohmyfood!</title>
-  </head>
 
-  <body>
-    <div class="Site">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="public/css/style.css" />
+  <script src="https://kit.fontawesome.com/0e8b9428cb.js" crossorigin="anonymous"></script>
+  <title>Ohmyfood!</title>
+</head>
+
+<body>
+  <div class="Site">
     <header class="first-preview">
       <div class="first-preview__intro">
-      <div class="first-preview__logo">
-        <img src="images/logo/ohmyfood.png" alt="logo"></a>
-      </div>
-      <div class="first-preview__navigation">
-      <form method="post" action="traitement.php" class="first-preview__search">
-        <span class="first-preview__ico"><i class="fa-solid fa-location-dot fa-l"></i></span>
-        <input type="text" placeholder="Paris, Belleville">
-      </form>
-      </div>
-      </div>
+        <div class="first-preview__logo">
+          <img src="images/logo/ohmyfood.png" alt="logo"></a>
+        </div> <!-- First-preview__logo -->
+        <div class="first-preview__navigation">
+          <form method="post" action="traitement.php" class="first-preview__search">
+            <span class="first-preview__ico"><i class="fa-solid fa-location-dot fa-l"></i></span>
+            <input type="text" placeholder="Paris, Belleville">
+          </form>
+        </div> <!-- First-preview__navigation -->
+      </div> <!-- First-preview__intro -->
       <div class="first-preview__sc">
-      <div class="first-preview__reserve">
-        <h1>Réservez le menu qui vous convient</h1> 
-      </div>
-      <div class="first-preview__decouvre">
-        <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-      </div> <!-- first-preview_decouvre -->
-        <a href="#"><button type="button" class="first-preview__btn">Explorer nos restaurants</button></a>
+        <div class="first-preview__reserve">
+          <h1>Réservez le menu qui vous convient</h1>
+        </div> <!-- First-preview__reserve -->
+        <div class="first-preview__decouvre">
+          <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+        </div> <!-- first-preview_decouvre -->
+        <a href="#rest-main__title"><button type="button" class="first-preview__btn">Explorer nos
+            restaurants</button></a>
       </div> <!-- first-preview_sc -->
     </header>
 
     <section class="group-main">
       <article class="funct-main">
-        
+
         <h1 class="funct-main__title">Fonctionnement</h1>
-          <div class="funct-main__contain">
-            <div class="funct-main__block">
-              <div class="funct-main__num">1</div>
-              <span class="funct-main__ico">
-                <i class="fa-solid fa-mobile-screen-button"></i>
-              </span>
-              <p class="funct-main__choose">Choisissez un restaurant</p>
-            </div>
-            <div class="funct-main__block">
-              <div class="funct-main__num">2</div>
-              <span class="funct-main__ico">
+        <div class="funct-main__contain">
+          <div class="funct-main__block">
+            <div class="funct-main__num">1</div>
+            <span class="funct-main__ico">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+            </span>
+            <p class="funct-main__choose">Choisissez un restaurant</p>
+          </div> <!-- Funct-main__block -->
+          <div class="funct-main__block">
+            <div class="funct-main__num">2</div>
+            <span class="funct-main__ico">
               <i class="fa-solid fa-list"></i>
-              </span>
-              <p class="funct-main__choose">Composez votre menu</p>
-            </div>
-            <div class="funct-main__block funct-main__block--purple">
-              <div class="funct-main__num">3</div>
-              <span class="funct-main__ico funct-main__ico--shop">
+            </span>
+            <p class="funct-main__choose">Composez votre menu</p>
+          </div> <!-- Funct-main__block -->
+          <div class="funct-main__block funct-main__block--purple">
+            <div class="funct-main__num">3</div>
+            <span class="funct-main__ico funct-main__ico--shop">
               <i class="fa-solid fa-store"></i>
-              </span>
-              <p class="funct-main__choose">Dégustez au restaurant</p>
-            </div>
-          </div>
+            </span>
+            <p class="funct-main__choose">Dégustez au restaurant</p>
+          </div> <!-- Funct-main__block--purple -->
+        </div> <!-- Funct-main__contain -->
 
       </article>
       <aside class="rest-main">
-       
-        <h1 class="rest-main__title">Restaurants</h1>
+
+        <h1 id="rest-main__title">Restaurants</h1>
         <div class="rest-main__contain">
           <a href="html/palette-du-goût.html">
-          <div class="rest-main__block">
-            <div class="rest-main__pic">
-              <div class="rest-main__new"><p>Nouveau</p></div>
-            <img src="images\restaurants\jay-wennington-N_Y88TWmGwA-unsplash.jpg">
-            </div>
-            
-            <div class="rest-main__descr">
-              <h2 class="rest-main__subtitle">La palette du goût</h2>
-              <span class="rest-main__icoheart"><i class="fa-regular fa-heart"></i></span>
-              <p class="rest-main__name">Ménilmontant</p>
-            </div>
-          </div>
-          </a>
-          <div class="rest-main__block">
-            <div class="rest-main__pic">
-              <div class="rest-main__new"><p>Nouveau</p></div>
-            <img src="images\restaurants\stil-u2Lp8tXIcjw-unsplash.jpg">
-            </div>
-            <div class="rest-main__descr">
-              <h2 class="rest-main__subtitle">La note enchantée</h2>
-              <span class="rest-main__icoheart"><i class="fa-regular fa-heart"></i></span>
-              <p class="rest-main__name">Charonne</p>
+            <div class="rest-main__block">
+              <div class="rest-main__pic">
+                <div class="rest-main__new">
+                  <p>Nouveau</p>
+                </div>
+                <img src="images\restaurants\jay-wennington-N_Y88TWmGwA-unsplash.jpg">
               </div>
-          </div>          
-          <div class="rest-main__block">
-            <div class="rest-main__pic">
-            <img src="images\restaurants\toa-heftiba-DQKerTsQwi0-unsplash.jpg">
+
+              <div class="rest-main__descr">
+                <h2 class="rest-main__subtitle">La palette du goût</h2>
+                <span class="rest-main__icoheart"><i class="fa-regular fa-heart"></i></span>
+                <p class="rest-main__name">Ménilmontant</p>
+              </div>
             </div>
-            <div class="rest-main__descr">
-              <h2 class="rest-main__subtitle">À la Française</h2>
-              <span class="rest-main__icoheart"><i class="fa-regular fa-heart"></i></span>
-              <p class="rest-main__name">Cité Rouge</p>
+          </a>
+          <a href="html/note-enchantée.html">
+            <div class="rest-main__block">
+              <div class="rest-main__pic">
+                <div class="rest-main__new">
+                  <p>Nouveau</p>
+                </div>
+                <img src="images\restaurants\stil-u2Lp8tXIcjw-unsplash.jpg">
+              </div>
+              <div class="rest-main__descr">
+                <h2 class="rest-main__subtitle">La note enchantée</h2>
+                <span class="rest-main__icoheart"><i class="fa-regular fa-heart"></i></span>
+                <p class="rest-main__name">Charonne</p>
+              </div>
             </div>
-          </div>
-          <div class="rest-main__block">
-            <div class="rest-main__pic">
-            <img src="images\restaurants\louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg">
+          </a>
+          <a href="html/la-française.html">
+            <div class="rest-main__block">
+              <div class="rest-main__pic">
+                <img src="images\restaurants\toa-heftiba-DQKerTsQwi0-unsplash.jpg">
+              </div>
+              <div class="rest-main__descr">
+                <h2 class="rest-main__subtitle">À la Française</h2>
+                <span class="rest-main__icoheart"><i class="fa-regular fa-heart"></i></span>
+                <p class="rest-main__name">Cité Rouge</p>
+              </div>
             </div>
-            <div class="rest-main__descr">
-              <h2 class="rest-main__subtitle">Le délice des sens</h2>
-              <span class="rest-main__icoheart"><i class="fa-regular fa-heart"></i></span>
-              <p class="rest-main__name">Folie-Méricourt</p>
+          </a>
+          <a href="html/délice-des-sens.html">
+            <div class="rest-main__block">
+              <div class="rest-main__pic">
+                <img src="images\restaurants\louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg">
+              </div>
+              <div class="rest-main__descr">
+                <h2 class="rest-main__subtitle">Le délice des sens</h2>
+                <span class="rest-main__icoheart"><i class="fa-regular fa-heart"></i></span>
+                <p class="rest-main__name">Folie-Méricourt</p>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
       </aside>
     </section>
@@ -121,15 +130,18 @@
     <footer class="last-preview">
       <h2 class="last-preview__title">ohmyfood</h2>
       <ul class="last-preview__list">
-        <li><span class="last-preview__ico"><i class="fa-solid fa-utensils"></i></span>Proposer un restaurant</li>
-        <li><span class="last-preview__ico"><i class="fa-solid fa-handshake-angle"></i></span>Devenir partenaire</li>
-        <li>Mentions légales</li>
-        <li>Contact</li>
+        <li><a href=""><span class="last-preview__ico"><i class="fa-solid fa-utensils"></i></span>Proposer un
+            restaurant</a></li>
+        <li><a href=""><span class="last-preview__ico"><i class="fa-solid fa-handshake-angle"></i></span>Devenir
+            partenaire</a></li>
+        <li><a href="">Mentions légales</a></li>
+        <li><a href="mailto:OhmyFood@contact.com">Contact</a></li>
       </ul>
 
     </footer>
-    
-  
+
+
   </div> <!-- Site -->
-  </body>
+</body>
+
 </html>

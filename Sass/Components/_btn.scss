@@ -1,0 +1,12 @@
+@mixin btn{
+    @include flex-center;
+    border-radius: 45px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    padding: 15px 40px 15px 40px;
+    font-size: 20px;
+    @include gradient-btn;
+    @include shadow-btn;
+    align-self: center;
+}

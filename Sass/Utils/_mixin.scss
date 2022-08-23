@@ -60,10 +60,6 @@
     @include shadow-btn;
     @include lightness($little-white);
     @include tab-vp{
-      justify-content: flex-start;
-      width: 100%;
-      flex-basis: auto;
-      text-align: unset;
       height: 80px;
     }
  }

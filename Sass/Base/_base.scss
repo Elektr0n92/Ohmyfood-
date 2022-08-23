@@ -1,21 +1,20 @@
 * ::before ::after {
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 0;
+  box-sizing: border-box;
+}
 
-  }
-  
-  .Site {
-    display: flex;
-    flex-flow: column;  
-  }
-  
-  a{
-    display: contents;
-    text-decoration: none;
-    color: inherit;
-  }
+body {
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+.Site {
+  display: flex;
+  flex-flow: column;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: contents;
+}

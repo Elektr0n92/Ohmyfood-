@@ -6,11 +6,11 @@
 @import "Utils/variables";
 @import "Utils/functions";
 @import "Utils/breakpoints";
+@import "Components/btn.scss";
 @import "Layout/header";
 @import "Layout/footer";
 @import "Base/base";
 @import "Base/typography";
-
 
 h1,
 h2 {
@@ -21,7 +21,8 @@ h2 {
   font-size: clamp(1.25rem, 0.9466rem + 0.9709vw, 2.5rem);
 }
 
-p, .first-preview__btn {
+p,
+.first-preview__btn {
   @include font;
   font-size: clamp(0.75rem, 0.568rem + 0.5825vw, 1.5rem);
 }
@@ -34,10 +35,9 @@ p, .first-preview__btn {
   flex-flow: column nowrap;
   height: 100%;
   gap: 40px;
-  @include tab-vp{
+  @include tab-vp {
     gap: 20px;
   }
-
 }
 
 .funct-main,
@@ -45,54 +45,116 @@ p, .first-preview__btn {
   padding: 60px 100px 60px 100px;
   gap: 40px;
   height: 100%;
-  @include tab-vp{
+  @include tab-vp {
     padding: 60px 50px 60px 50px;
   }
 
-  @include mobile-small-vp{
+  @include mobile-small-vp {
     padding: 60px 30px 60px 30px;
   }
 }
 
 /* Menu */
 
-.main-menu{
+.main-menu {
   background: whitesmoke;
   position: relative;
   margin-top: -70px;
   border-radius: 50px 50px 0px 0px;
+  margin-left: 100px;
+  margin-right: 100px;
 
-  &__contain{
+  @include tab-vp {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  @include mobile-small-vp {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  &__contain {
     width: -webkit-fill-available;
     background: whitesmoke;
-    padding: 23px 20px 20px 20px;
+    padding: 23px 100px 60px 100px;
     border-radius: 50px 50px 0px 0px;
     display: flex;
     flex-flow: column nowrap;
-    gap: 20px;
+    gap: 50px;
 
+    @include tab-vp {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+
+    @include mobile-small-vp {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
   }
 
-  &__first-title{
+  &__first-title {
     font-family: $shrik;
   }
 
-  &__entrée{
+  &__entrée {
     display: flex;
     flex-flow: column nowrap;
     gap: 40px;
 
-    p{
+    p {
       margin: 0;
     }
-  
   }
 
-  &__block{
+  &__block {
     @include block;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
+    flex-flow: row nowrap;
+  }
+
+  &__headline {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+
+  &__icoheart {
+    display: inline-flex;
+    font-size: 30px;
+  }
+
+  &__block-contain {
+    display: flex;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  &__subname {
+    display: flex;
     flex-flow: column nowrap;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    @include tab-vp {
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+  }
+
+  &__price {
+    display: flex;
+    align-items: flex-end;
+    font-size: clamped(12px, 24px, 500px, 2560px);
+    font-weight: bolder;
+  }
+
+  &__btn {
+    @include btn;
   }
 }
 
@@ -116,7 +178,7 @@ p, .first-preview__btn {
     align-items: center;
     height: 100%;
     justify-content: space-between;
-    @include tab-vp{
+    @include tab-vp {
       flex-direction: column;
       align-items: baseline;
       gap: 50px;
@@ -135,15 +197,14 @@ p, .first-preview__btn {
     @include shadow-btn;
     @include flex-center;
     @include lightness($little-white);
-    @include tab-vp{
+    @include tab-vp {
       justify-content: flex-start;
       width: 100%;
       flex-basis: auto;
       text-align: unset;
       height: 80px;
-    
     }
-    
+
     &--purple {
       @include lightness($little-pink);
     }
@@ -152,8 +213,8 @@ p, .first-preview__btn {
       font-weight: 600;
       padding-right: 12px;
     }
-  
-    &--menu{
+
+    &--menu {
       flex: auto;
     }
   }
@@ -166,16 +227,16 @@ p, .first-preview__btn {
     position: absolute;
     left: -15px;
     color: white;
-    font-size:clamped(15px, 20px, 500px, 2560px);
+    font-size: clamped(15px, 20px, 500px, 2560px);
     @include flex-center;
   }
 
   &__ico {
     display: inline-flex;
-    font-size:clamped(22px, 45px, 500px, 2560px);
+    font-size: clamped(22px, 45px, 500px, 2560px);
     color: #949494;
     padding-left: 20px;
-    @include tab-vp{
+    @include tab-vp {
       padding-left: 40px;
     }
 
@@ -191,6 +252,10 @@ p, .first-preview__btn {
 
 /* REST MAIN */
 
+#rest-main__title{
+  align-self: baseline;
+}
+
 .rest-main {
   background-color: whitesmoke;
   display: flex;
@@ -204,15 +269,14 @@ p, .first-preview__btn {
     box-shadow: 0px 0px 15px 0px #000000;
     border-radius: 10px;
     flex: 1 0 47%;
-    @include tab-vp{
+    @include tab-vp {
       height: 255px;
     }
-
   }
 
   &__pic {
     width: 100%;
-    height:73%;
+    height: 73%;
     position: relative;
 
     img {
@@ -237,10 +301,6 @@ p, .first-preview__btn {
     }
   }
 
-  &__title {
-    align-self: baseline;
-  }
-
   &__descr {
     padding: 0 10px 0 10px;
     display: flex;
@@ -252,10 +312,10 @@ p, .first-preview__btn {
   }
 
   &__subtitle {
-    font-size:clamped(15px, 30px, 500px, 2560px);
+    font-size: clamped(15px, 30px, 500px, 2560px);
     font-weight: 900;
-  
-    &--menu{
+
+    &--menu {
       font-family: $roboto;
     }
   }
@@ -263,7 +323,7 @@ p, .first-preview__btn {
   &__name {
     margin: 0;
     font-weight: 400;
-    font-size:clamped(12px, 24px, 500px, 2560px);
+    font-size: clamped(12px, 24px, 500px, 2560px);
   }
 
   &__icoheart {
@@ -272,9 +332,9 @@ p, .first-preview__btn {
     top: 50%;
     margin-top: -14px;
     font-size: 2em;
-    
+
     &:hover {
-      .fa-regular{
+      .fa-regular {
         font-weight: bolder;
         font-family: "Font Awesome 6 Free";
         background: linear-gradient(90deg, $pink-btn, $purple-btn);
@@ -284,13 +344,10 @@ p, .first-preview__btn {
         -moz-background-clip: text;
         -moz-text-fill-color: transparent;
         cursor: pointer;
- 
-
       }
     }
-  
   }
-  
+
   &__contain {
     display: flex;
     flex-flow: row wrap;
@@ -300,4 +357,3 @@ p, .first-preview__btn {
     gap: 50px;
   }
 }
-

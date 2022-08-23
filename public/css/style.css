@@ -189,9 +189,9 @@ body {
 }
 
 a {
-  display: contents;
   text-decoration: none;
   color: inherit;
+  display: contents;
 }
 
 /* FAMILY */
@@ -204,7 +204,8 @@ h2 {
   font-size: clamp(1.25rem, 0.9466rem + 0.9709vw, 2.5rem);
 }
 
-p, .first-preview__btn {
+p,
+.first-preview__btn {
   font-family: "Roboto", sans serif;
   font-size: clamp(0.75rem, 0.568rem + 0.5825vw, 1.5rem);
 }
@@ -248,15 +249,41 @@ p, .first-preview__btn {
   position: relative;
   margin-top: -70px;
   border-radius: 50px 50px 0px 0px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+@media screen and (max-width: 1032px) {
+  .main-menu {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .main-menu {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 .main-menu__contain {
   width: -webkit-fill-available;
   background: whitesmoke;
-  padding: 23px 20px 20px 20px;
+  padding: 23px 100px 60px 100px;
   border-radius: 50px 50px 0px 0px;
   display: flex;
   flex-flow: column nowrap;
-  gap: 20px;
+  gap: 50px;
+}
+@media screen and (max-width: 1032px) {
+  .main-menu__contain {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .main-menu__contain {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 .main-menu__first-title {
   font-family: "Shrikhand", cursive;
@@ -281,19 +308,65 @@ p, .first-preview__btn {
   background: #f6f6f6;
   align-items: center;
   justify-content: center;
-  flex-flow: column nowrap;
+  flex-flow: row nowrap;
 }
 .main-menu__block:hover {
   background: white;
 }
 @media screen and (max-width: 1032px) {
   .main-menu__block {
-    justify-content: flex-start;
-    width: 100%;
-    flex-basis: auto;
-    text-align: unset;
     height: 80px;
   }
+}
+.main-menu__headline {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  align-items: center;
+}
+.main-menu__icoheart {
+  display: inline-flex;
+  font-size: 30px;
+}
+.main-menu__block-contain {
+  display: flex;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.main-menu__subname {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+@media screen and (max-width: 1032px) {
+  .main-menu__subname {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
+.main-menu__price {
+  display: flex;
+  align-items: flex-end;
+  font-size: clamp(0.75rem, 0.58vw + 0.57rem, 1.5rem);
+  font-weight: bolder;
+}
+.main-menu__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: initial;
+  border-radius: 45px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  padding: 15px 40px 15px 40px;
+  font-size: 20px;
+  background: linear-gradient(#ff79da, #9356dc);
+  box-shadow: 0px 6px 13px 0px rgba(0, 0, 0, 0.16);
+  align-self: center;
 }
 
 /* FUNCT MAIN */
@@ -396,6 +469,10 @@ p, .first-preview__btn {
 }
 
 /* REST MAIN */
+#rest-main__title {
+  align-self: baseline;
+}
+
 .rest-main {
   background-color: whitesmoke;
   display: flex;
@@ -442,9 +519,6 @@ p, .first-preview__btn {
   color: #30a387;
   margin: 0;
   font-weight: 900;
-}
-.rest-main__title {
-  align-self: baseline;
 }
 .rest-main__descr {
   padding: 0 10px 0 10px;
