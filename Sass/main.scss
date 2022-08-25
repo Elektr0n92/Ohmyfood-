@@ -113,6 +113,31 @@ p,
     }
   }
 
+  &__subtitle{
+    position: relative;
+    width: fit-content;
+    padding-bottom: 6px;
+
+    
+    &::after{
+      content: "";
+      width: 60%;
+      height: 15%;
+      background: $border-green;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    &--plats::after{
+      width: 85%;
+    }
+  
+    &--desserts::after{
+      width: 50%;
+    }
+  }
+
   &__block {
     @include block;
     align-items: center;
@@ -129,7 +154,7 @@ p,
 
   &__icoheart {
     display: inline-flex;
-    font-size: 30px;
+    font-size: clamped(15px, 30px, 500px, 2560px)
   }
 
   &__block-contain {
