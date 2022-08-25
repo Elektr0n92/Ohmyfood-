@@ -32,6 +32,13 @@
       
       width: 100%;
       height: 475px;
+
+      @include tab-vp{
+        height: 400px;
+      }
+      @include mobile-small-vp{
+        height: 325px;
+      }
     
       img{
         @include picsize;

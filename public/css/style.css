@@ -43,6 +43,16 @@
   width: 100%;
   height: 475px;
 }
+@media screen and (max-width: 1032px) {
+  .first-preview__picture {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .first-preview__picture {
+    height: 325px;
+  }
+}
 .first-preview__picture img {
   object-fit: cover;
   height: 100%;
@@ -227,7 +237,7 @@ p,
 .funct-main,
 .rest-main {
   padding: 60px 100px 60px 100px;
-  gap: 40px;
+  gap: 30px;
   height: 100%;
 }
 @media screen and (max-width: 1032px) {
@@ -239,7 +249,7 @@ p,
 @media screen and (max-width: 500px) {
   .funct-main,
 .rest-main {
-    padding: 60px 30px 60px 30px;
+    padding: 50px 30px 50px 30px;
   }
 }
 
@@ -283,15 +293,22 @@ p,
   .main-menu__contain {
     padding-left: 20px;
     padding-right: 20px;
+    gap: 30px;
   }
 }
 .main-menu__first-title {
   font-family: "Shrikhand", cursive;
+  font-size: clamp(1.88rem, 0.97vw + 1.57rem, 3.13rem);
 }
 .main-menu__entrée {
   display: flex;
   flex-flow: column nowrap;
   gap: 40px;
+}
+@media screen and (max-width: 500px) {
+  .main-menu__entrée {
+    gap: 20px;
+  }
 }
 .main-menu__entrée p {
   margin: 0;
@@ -392,7 +409,12 @@ p,
   .funct-main__contain {
     flex-direction: column;
     align-items: baseline;
-    gap: 50px;
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .funct-main__contain {
+    gap: 25px;
   }
 }
 .funct-main__block {
@@ -487,9 +509,19 @@ p,
   border-radius: 10px;
   flex: 1 0 47%;
 }
+@media screen and (max-width: 1600px) {
+  .rest-main__block {
+    height: 280px;
+  }
+}
 @media screen and (max-width: 1032px) {
   .rest-main__block {
     height: 255px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .rest-main__block {
+    height: 200px;
   }
 }
 .rest-main__pic {
@@ -566,6 +598,11 @@ p,
   width: 100%;
   justify-content: space-between;
   gap: 50px;
+}
+@media screen and (max-width: 500px) {
+  .rest-main__contain {
+    row-gap: 25px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
