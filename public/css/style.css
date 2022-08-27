@@ -596,9 +596,10 @@ p,
 .rest-main__icoheart {
   position: absolute;
   align-self: flex-end;
-  top: 50%;
-  margin-top: -14px;
-  font-size: 2em;
+  font-size: clamp(1.56rem, 0.97vw + 1.26rem, 2.81rem);
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
 }
 .rest-main__icoheart:hover .fa-regular {
   font-weight: bolder;

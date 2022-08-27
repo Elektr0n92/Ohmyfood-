@@ -369,9 +369,10 @@ p,
   &__icoheart {
     position: absolute;
     align-self: flex-end;
-    top: 50%;
-    margin-top: -14px;
-    font-size: 2em;
+    font-size: clamped(25px, 45px, 500px, 2560px);
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
 
     &:hover {
       .fa-regular {
