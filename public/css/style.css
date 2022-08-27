@@ -400,10 +400,15 @@ p,
   cursor: pointer;
   color: white;
   padding: 15px 40px 15px 40px;
-  font-size: 20px;
   background: linear-gradient(#ff79da, #9356dc);
   box-shadow: 0px 6px 13px 0px rgba(0, 0, 0, 0.16);
   align-self: center;
+  font-size: clamp(0.63rem, 0.49vw + 0.47rem, 1.25rem);
+}
+@media screen and (max-width: 1032px) {
+  .main-menu__btn {
+    padding: 10px 25px;
+  }
 }
 
 /* FUNCT MAIN */

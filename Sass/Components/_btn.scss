@@ -5,8 +5,10 @@
     cursor: pointer;
     color: white;
     padding: 15px 40px 15px 40px;
-    font-size: 20px;
     @include gradient-btn;
     @include shadow-btn;
     align-self: center;
+    @include tab-vp{
+        padding: 10px 25px;
+    }
 }
