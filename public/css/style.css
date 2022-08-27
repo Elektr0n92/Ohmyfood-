@@ -10,7 +10,7 @@
 /* BLOCK */
 /* FLEXBOX */
 /* MEDIA QUERRIE */
-/* color */ /* First Preview */
+/* color */ /* ICOHEART */ /* First Preview */
 .first-preview {
   display: flex;
   align-items: center;
@@ -298,7 +298,7 @@ p,
 }
 .main-menu__first-title {
   font-family: "Shrikhand", cursive;
-  font-size: clamp(1.88rem, 0.97vw + 1.57rem, 3.13rem);
+  font-size: clamp(1.75rem, 1.07vw + 1.42rem, 3.13rem);
 }
 .main-menu__entrée {
   display: flex;
@@ -338,7 +338,7 @@ p,
   height: 150px;
   background: #f6f6f6;
   position: relative;
-  border-radius: 25px;
+  border-radius: 15px;
   align-items: center;
   display: flex;
   box-shadow: 0px 6px 13px 0px rgba(0, 0, 0, 0.16);
@@ -352,18 +352,29 @@ p,
 }
 @media screen and (max-width: 1032px) {
   .main-menu__block {
-    height: 80px;
+    height: 65px;
   }
 }
 .main-menu__headline {
   display: flex;
   justify-content: space-between;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   align-items: center;
 }
 .main-menu__icoheart {
+  font-size: clamp(1.56rem, 0.97vw + 1.26rem, 2.81rem);
   display: inline-flex;
-  font-size: clamp(0.94rem, 0.73vw + 0.71rem, 1.88rem);
+}
+.main-menu__icoheart:hover .fa-regular {
+  font-weight: bolder;
+  font-family: "Font Awesome 6 Free";
+  background: linear-gradient(90deg, #ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  cursor: pointer;
 }
 .main-menu__block-contain {
   display: flex;

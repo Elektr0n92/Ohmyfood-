@@ -54,13 +54,13 @@
     height: 150px;
     background: #f6f6f6;
     position: relative;
-    border-radius: 25px;
+    border-radius: 15px;
     align-items: center;
     display: flex;
     @include shadow-btn;
     @include lightness($little-white);
     @include tab-vp{
-      height: 80px;
+      height: 65px;
     }
  }
  

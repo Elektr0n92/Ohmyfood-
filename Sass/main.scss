@@ -7,6 +7,7 @@
 @import "Utils/functions";
 @import "Utils/breakpoints";
 @import "Components/btn.scss";
+@import "Components/ico.scss";
 @import "Layout/header";
 @import "Layout/footer";
 @import "Base/base";
@@ -97,7 +98,7 @@ p,
 
   &__first-title {
     font-family: $shrik;
-    font-size: clamped(30px, 50px, 500px, 2560px);
+    font-size: clamped(28px, 50px, 500px, 2560px);
   }
 
   &__entrée {
@@ -148,13 +149,12 @@ p,
   &__headline {
     display: flex;
     justify-content: space-between;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     align-items: center;
   }
 
   &__icoheart {
-    display: inline-flex;
-    font-size: clamped(15px, 30px, 500px, 2560px)
+    @include icoheart;
   }
 
   &__block-contain {
