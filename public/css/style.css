@@ -10,7 +10,21 @@
 /* BLOCK */
 /* FLEXBOX */
 /* MEDIA QUERRIE */
-/* color */ /* ICOHEART */ /* First Preview */
+/* color */ /* ICOHEART */
+@keyframes menu {
+  0% {
+    top: 50px;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+/* First Preview */
 .first-preview {
   display: flex;
   align-items: center;
@@ -346,6 +360,7 @@ p,
   align-items: center;
   justify-content: center;
   flex-flow: row nowrap;
+  animation: menu 0.99s;
 }
 .main-menu__block:hover {
   background: white;
@@ -365,16 +380,20 @@ p,
   font-size: clamp(1.56rem, 0.97vw + 1.26rem, 2.81rem);
   display: inline-flex;
 }
+.main-menu__icoheart .fa-regular {
+  transition: 1s;
+}
 .main-menu__icoheart:hover .fa-regular {
   font-weight: bolder;
   font-family: "Font Awesome 6 Free";
+  cursor: pointer;
   background: linear-gradient(90deg, #ff79da, #9356dc);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
-  cursor: pointer;
+  transition: 1s;
 }
 .main-menu__block-contain {
   display: flex;

@@ -3,17 +3,39 @@
 @mixin icoheart {
   font-size: clamped(25px, 45px, 500px, 2560px);
   display: inline-flex;
+.fa-regular {
+    transition:1s;
+} 
+
   &:hover {
     .fa-regular {
       font-weight: bolder;
       font-family: "Font Awesome 6 Free";
+      cursor: pointer;
       background: linear-gradient(90deg, $pink-btn, $purple-btn);
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       -moz-background-clip: text;
       -moz-text-fill-color: transparent;
-      cursor: pointer;
+      transition:1s;
+     }
+ }
+
+}
+
+@keyframes menu {
+    0%{
+        top: 50px;
+        opacity: 0;
     }
-  }
+
+    50%{
+        opacity: 0.5;
+    }
+    
+    100%{
+        opacity: 1;
+        top: 0;
+    }
 }

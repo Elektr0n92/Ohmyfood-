@@ -23,6 +23,10 @@
     background: linear-gradient(whitesmoke, silver);
 }
 
+@mixin gradient-ico{
+    background: linear-gradient(90deg,$pink-btn, $purple-btn);
+}
+
 /* FONT */
 
 @mixin font($font: $roboto){
