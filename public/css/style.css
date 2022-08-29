@@ -264,6 +264,7 @@ p,
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 .loading__text {
   font-size: 100px;
