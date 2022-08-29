@@ -145,6 +145,21 @@ p,
     justify-content: center;
     flex-flow: row nowrap;
     animation: menu .99s;
+    overflow: hidden;
+    cursor: pointer;
+
+    &:hover{
+      .main-menu__check{
+        margin-right: 0;
+      }
+      
+      .main-menu__icocheck{
+        transform: rotate(0deg);
+        transition: transform 1s;
+      }
+    
+    }
+
   }
 
   &__headline {
@@ -182,6 +197,24 @@ p,
     align-items: flex-end;
     font-size: clamped(12px, 24px, 500px, 2560px);
     font-weight: bolder;
+  }
+
+  &__check{
+    width: 150px;
+    height: 100%;
+    background-color: $border-green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: -150px;
+    transition: 1s;
+  }
+
+  &__icocheck{
+    font-size: 40px;
+    color: white;
+    transform: rotate(360deg);
+    transition: transform 1s;
   }
 
   &__btn {

@@ -361,6 +361,8 @@ p,
   justify-content: center;
   flex-flow: row nowrap;
   animation: menu 0.99s;
+  overflow: hidden;
+  cursor: pointer;
 }
 .main-menu__block:hover {
   background: white;
@@ -369,6 +371,13 @@ p,
   .main-menu__block {
     height: 65px;
   }
+}
+.main-menu__block:hover .main-menu__check {
+  margin-right: 0;
+}
+.main-menu__block:hover .main-menu__icocheck {
+  transform: rotate(0deg);
+  transition: transform 1s;
 }
 .main-menu__headline {
   display: flex;
@@ -419,6 +428,22 @@ p,
   align-items: flex-end;
   font-size: clamp(0.75rem, 0.58vw + 0.57rem, 1.5rem);
   font-weight: bolder;
+}
+.main-menu__check {
+  width: 150px;
+  height: 100%;
+  background-color: #99E2D0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: -150px;
+  transition: 1s;
+}
+.main-menu__icocheck {
+  font-size: 40px;
+  color: white;
+  transform: rotate(360deg);
+  transition: transform 1s;
 }
 .main-menu__btn {
   display: flex;
