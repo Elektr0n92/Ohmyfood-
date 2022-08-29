@@ -39,3 +39,19 @@
         top: 0;
     }
 }
+
+@keyframes spin {
+    0%, 15% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes apparition{
+   100%{
+    opacity: 0;    
+    z-index: -100;
+    }
+}
