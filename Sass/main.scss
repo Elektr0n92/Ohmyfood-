@@ -28,7 +28,7 @@ p,
   font-size: clamp(0.75rem, 0.568rem + 0.5825vw, 1.5rem);
 }
 
-.loading{
+.loading {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -41,12 +41,12 @@ p,
   animation-play-state: running;
   animation-fill-mode: both;
   animation-delay: 1.75s;
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
 
-  &__text{
+  &__text {
     font-size: 100px;
     color: $purple-btn;
     animation: spin 5s;
@@ -130,7 +130,7 @@ p,
     display: flex;
     flex-flow: column nowrap;
     gap: 40px;
-    @include mobile-small-vp{
+    @include mobile-small-vp {
       gap: 20px;
     }
 
@@ -139,13 +139,12 @@ p,
     }
   }
 
-  &__subtitle{
+  &__subtitle {
     position: relative;
     width: fit-content;
     padding-bottom: 6px;
 
-    
-    &::after{
+    &::after {
       content: "";
       width: 60%;
       height: 15%;
@@ -155,11 +154,11 @@ p,
       left: 0;
     }
 
-    &--plats::after{
+    &--plats::after {
       width: 85%;
     }
-  
-    &--desserts::after{
+
+    &--desserts::after {
       width: 50%;
     }
   }
@@ -169,22 +168,20 @@ p,
     align-items: center;
     justify-content: center;
     flex-flow: row nowrap;
-    animation: menu .99s;
+    animation: menu 0.99s;
     overflow: hidden;
     cursor: pointer;
 
-    &:hover{
-      .main-menu__check{
+    &:hover {
+      .main-menu__check {
         margin-right: 0;
       }
-      
-      .main-menu__icocheck{
+
+      .main-menu__icocheck {
         transform: rotate(0deg);
         transition: transform 1s;
       }
-    
     }
-
   }
 
   &__headline {
@@ -203,18 +200,14 @@ p,
     width: 100%;
     padding-left: 20px;
     padding-right: 20px;
+    min-width: 0;
   }
 
   &__subname {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
     width: 100%;
-    align-items: center;
-    @include tab-vp {
-      align-items: flex-start;
-      justify-content: flex-start;
-    }
+    text-align: left;
+    white-space: nowrap;
+    min-width: 0;
   }
 
   &__price {
@@ -224,7 +217,7 @@ p,
     font-weight: bolder;
   }
 
-  &__check{
+  &__check {
     width: 150px;
     height: 100%;
     background-color: $border-green;
@@ -235,7 +228,7 @@ p,
     transition: 1s;
   }
 
-  &__icocheck{
+  &__icocheck {
     font-size: 40px;
     color: white;
     transform: rotate(360deg);
@@ -273,7 +266,7 @@ p,
       align-items: baseline;
       gap: 40px;
     }
-    @include mobile-small-vp{
+    @include mobile-small-vp {
       gap: 25px;
     }
   }
@@ -345,7 +338,7 @@ p,
 
 /* REST MAIN */
 
-#rest-main__title{
+#rest-main__title {
   align-self: baseline;
 }
 
@@ -362,14 +355,14 @@ p,
     box-shadow: 0px 0px 15px 0px #000000;
     border-radius: 10px;
     flex: 1 0 47%;
-    
-    @include desktop-norm{
+
+    @include desktop-norm {
       height: 280px;
     }
     @include tab-vp {
       height: 255px;
     }
-    @include mobile-small-vp{
+    @include mobile-small-vp {
       height: 200px;
     }
   }
@@ -415,7 +408,7 @@ p,
     font-size: clamped(15px, 30px, 500px, 2560px);
     font-weight: 900;
 
-    &__menu {
+    &--menu {
       font-family: $roboto;
       white-space: nowrap;
       text-overflow: ellipsis;
@@ -427,6 +420,11 @@ p,
     margin: 0;
     font-weight: 400;
     font-size: clamped(12px, 24px, 500px, 2560px);
+
+    &--menu{
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
   }
 
   &__icoheart {
@@ -459,7 +457,7 @@ p,
     width: 100%;
     justify-content: space-between;
     gap: 50px;
-    @include mobile-small-vp{
+    @include mobile-small-vp {
       row-gap: 25px;
     }
   }
