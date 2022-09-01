@@ -683,8 +683,12 @@ p,
   font-size: clamp(0.94rem, 0.73vw + 0.71rem, 1.88rem);
   font-weight: 900;
 }
-.rest-main__subtitle--menu {
+.rest-main__subtitle__menu {
   font-family: "Roboto", sans serif;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 50px;
 }
 .rest-main__name {
   margin: 0;

@@ -415,8 +415,12 @@ p,
     font-size: clamped(15px, 30px, 500px, 2560px);
     font-weight: 900;
 
-    &--menu {
+    &__menu {
       font-family: $roboto;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      font-size: 50px;
     }
   }
 
