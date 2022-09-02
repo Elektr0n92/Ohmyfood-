@@ -41,7 +41,7 @@
 }
 
 @keyframes spin {
-    0%, 15% {
+    0%{
 		transform: rotate(0);
 	}
 	100% {
@@ -50,8 +50,8 @@
 }
 
 @keyframes apparition{
-   100%{
-    opacity: 0;    
+    100%{    
     z-index: -100;
+    opacity: 0;
     }
 }

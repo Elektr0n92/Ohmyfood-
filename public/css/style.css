@@ -25,7 +25,7 @@
   }
 }
 @keyframes spin {
-  0%, 15% {
+  0% {
     transform: rotate(0);
   }
   100% {
@@ -34,8 +34,8 @@
 }
 @keyframes apparition {
   100% {
-    opacity: 0;
     z-index: -100;
+    opacity: 0;
   }
 }
 /* First Preview */
@@ -257,19 +257,19 @@ p,
   background: #000;
   background: radial-gradient(#222, #000);
   z-index: 100;
-  animation: apparition 5s;
+  animation: apparition;
   animation-play-state: running;
   animation-fill-mode: both;
-  animation-delay: 1.75s;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  animation-delay: 3s;
 }
 .loading__text {
   font-size: 100px;
   color: #9356dc;
-  animation: spin 5s;
+  animation: spin 3s;
 }
 
 /* FUNCT MAIN & REST MAIN */
@@ -387,7 +387,7 @@ p,
 }
 .main-menu__block {
   width: 100%;
-  height: 150px;
+  height: 120px;
   background: #f6f6f6;
   position: relative;
   border-radius: 15px;
@@ -447,19 +447,13 @@ p,
   width: 100%;
   padding-left: 20px;
   padding-right: 20px;
+  min-width: 0;
 }
 .main-menu__subname {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
   width: 100%;
-  align-items: center;
-}
-@media screen and (max-width: 1032px) {
-  .main-menu__subname {
-    align-items: flex-start;
-    justify-content: flex-start;
-  }
+  text-align: left;
+  white-space: nowrap;
+  min-width: 0;
 }
 .main-menu__price {
   display: flex;
@@ -685,11 +679,18 @@ p,
 }
 .rest-main__subtitle--menu {
   font-family: "Roboto", sans serif;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .rest-main__name {
   margin: 0;
   font-weight: 400;
   font-size: clamp(0.75rem, 0.58vw + 0.57rem, 1.5rem);
+}
+.rest-main__name--menu {
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .rest-main__icoheart {
   position: absolute;
