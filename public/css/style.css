@@ -25,7 +25,7 @@
   }
 }
 @keyframes spin {
-  0%, 15% {
+  0% {
     transform: rotate(0);
   }
   100% {
@@ -34,8 +34,8 @@
 }
 @keyframes apparition {
   100% {
-    opacity: 0;
     z-index: -100;
+    opacity: 0;
   }
 }
 /* First Preview */
@@ -257,19 +257,19 @@ p,
   background: #000;
   background: radial-gradient(#222, #000);
   z-index: 100;
-  animation: apparition 5s;
+  animation: apparition;
   animation-play-state: running;
   animation-fill-mode: both;
-  animation-delay: 1.75s;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  animation-delay: 3s;
 }
 .loading__text {
   font-size: 100px;
   color: #9356dc;
-  animation: spin 5s;
+  animation: spin 3s;
 }
 
 /* FUNCT MAIN & REST MAIN */

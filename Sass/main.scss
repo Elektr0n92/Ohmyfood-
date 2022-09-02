@@ -37,19 +37,19 @@ p,
   background: #000;
   background: radial-gradient(#222, #000);
   z-index: 100;
-  animation: apparition 5s;
+  animation: apparition;
   animation-play-state: running;
   animation-fill-mode: both;
-  animation-delay: 1.75s;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  animation-delay: 3s;
 
   &__text {
     font-size: 100px;
     color: $purple-btn;
-    animation: spin 5s;
+    animation: spin 3s;
   }
 }
 
