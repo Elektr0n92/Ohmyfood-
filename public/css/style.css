@@ -10,7 +10,7 @@
 /* BLOCK */
 /* FLEXBOX */
 /* MEDIA QUERRIE */
-/* color */ /* ICOHEART */
+/* color */
 @keyframes menu {
   0% {
     top: 50px;
@@ -38,7 +38,7 @@
     opacity: 0;
   }
 }
-/* First Preview */
+/* ICOHEART */ /* First Preview */
 .first-preview {
   display: flex;
   align-items: center;
