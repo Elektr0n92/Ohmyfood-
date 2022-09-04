@@ -6,6 +6,7 @@
 @import "Utils/variables";
 @import "Utils/functions";
 @import "Utils/breakpoints";
+@import "Utils/keyframes";
 @import "Components/btn.scss";
 @import "Components/ico.scss";
 @import "Layout/header";
@@ -168,11 +169,13 @@ p,
     align-items: center;
     justify-content: center;
     flex-flow: row nowrap;
-    animation: menu 0.99s;
+    animation: menu 2s;
     overflow: hidden;
     cursor: pointer;
+    opacity: 0;
+    animation-fill-mode: both;
 
-    &:hover {
+    &:hover, &:active {
       .main-menu__check {
         margin-right: 0;
       }
@@ -181,6 +184,42 @@ p,
         transform: rotate(0deg);
         transition: transform 1s;
       }
+    }
+ 
+    &--delay0{
+      animation-delay: 0ms;
+    }
+
+    &--delay1{
+      animation-delay: 0.3s;
+    }
+
+    &--delay2{
+      animation-delay: 0.6s;
+    }
+
+    &--delay3{
+      animation-delay: 0.9s;
+    }
+
+    &--delay4{
+      animation-delay: 1.2s;
+    }
+
+    &--delay5{
+      animation-delay: 1.5s;
+    }
+
+    &--delay6{
+      animation-delay: 1.8s;
+    }
+
+    &--delay7{
+      animation-delay: 2.1s;
+    }
+
+    &--delay8{
+      animation-delay: 2.4s;
     }
   }
 
@@ -352,7 +391,7 @@ p,
     display: flex;
     flex-flow: column nowrap;
     height: 350px;
-    box-shadow: 0px 0px 15px 0px #000000;
+    box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 50%);
     border-radius: 10px;
     flex: 1 0 47%;
 
