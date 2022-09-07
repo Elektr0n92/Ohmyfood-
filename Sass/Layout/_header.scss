@@ -119,12 +119,12 @@
 
   &__btn {
     @include flex-center;
-    height: 40px;
     border-radius: 45px;
+    height: 15px;
     border: none;
     cursor: pointer;
     color: white;
-    padding: clamped(15px, 29px, 500px, 2560px);
+    padding: clamped(10px, 20px, 500px, 2560px);
     font-size: 20px;
     @include gradient-btn;
     @include shadow-btn;
