@@ -18,3 +18,12 @@ a {
   color: inherit;
   display: contents;
 }
+
+h1,
+h2 {
+  @include font;
+  font-size: 40px;
+  margin: 0;
+  font-weight: 600;
+  font-size: clamp(1.25rem, 0.9466rem + 0.9709vw, 2.5rem);
+}

@@ -11,17 +11,8 @@
 @import "Components/ico.scss";
 @import "Layout/header";
 @import "Layout/footer";
-@import "Base/base";
 @import "Base/typography";
-
-h1,
-h2 {
-  @include font;
-  font-size: 40px;
-  margin: 0;
-  font-weight: 600;
-  font-size: clamp(1.25rem, 0.9466rem + 0.9709vw, 2.5rem);
-}
+@import "Base/base";
 
 p,
 .first-preview__btn {
@@ -175,8 +166,8 @@ p,
     opacity: 0;
     animation-fill-mode: both;
 
-
-    &:hover, &:active{
+    &:hover,
+    &:active {
       .main-menu__check {
         margin-right: 0;
       }
@@ -186,44 +177,44 @@ p,
         transition: transform 1s;
       }
     }
- 
-    &--delay0{
+
+    &--delay0 {
       animation-delay: 0ms;
     }
 
-    &--delay1{
+    &--delay1 {
       animation-delay: 0.3s;
     }
 
-    &--delay2{
+    &--delay2 {
       animation-delay: 0.6s;
     }
 
-    &--delay3{
+    &--delay3 {
       animation-delay: 0.9s;
     }
 
-    &--delay4{
+    &--delay4 {
       animation-delay: 1.2s;
     }
 
-    &--delay5{
+    &--delay5 {
       animation-delay: 1.5s;
     }
 
-    &--delay6{
+    &--delay6 {
       animation-delay: 1.8s;
     }
 
-    &--delay7{
+    &--delay7 {
       animation-delay: 2.1s;
     }
 
-    &--delay8{
+    &--delay8 {
       animation-delay: 2.4s;
     }
 
-    &--delay9{
+    &--delay9 {
       animation-delay: 2.7s;
     }
   }
@@ -234,7 +225,8 @@ p,
     flex-flow: row nowrap;
     align-items: center;
 
-    &:hover, &:active{
+    &:hover,
+    &:active {
       .main-menu__check {
         margin-right: 0;
       }
@@ -256,7 +248,8 @@ p,
     padding-left: 20px;
     padding-right: 20px;
     min-width: 0;
-    &:hover, &:active{
+    &:hover,
+    &:active {
       .main-menu__check {
         margin-right: 0;
       }
@@ -349,6 +342,11 @@ p,
     @include shadow-btn;
     @include flex-center;
     @include lightness($little-white);
+
+    &:hover {
+      @include shadow-btn-hover;
+    }
+
     @include tab-vp {
       justify-content: flex-start;
       width: 100%;
@@ -487,7 +485,7 @@ p,
     font-weight: 400;
     font-size: clamped(12px, 24px, 500px, 2560px);
 
-    &--menu{
+    &--menu {
       text-overflow: ellipsis;
       overflow: hidden;
     }
