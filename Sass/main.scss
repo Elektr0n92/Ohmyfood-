@@ -127,7 +127,7 @@ p,
     font-size: clamped(28px, 50px, 500px, 2560px);
   }
 
-  &__entrée {
+  &__type {
     display: flex;
     flex-flow: column nowrap;
     gap: 40px;
@@ -175,7 +175,8 @@ p,
     opacity: 0;
     animation-fill-mode: both;
 
-    &:hover, &:active {
+
+    &:hover, &:active{
       .main-menu__check {
         margin-right: 0;
       }
@@ -228,6 +229,17 @@ p,
     justify-content: space-between;
     flex-flow: row nowrap;
     align-items: center;
+
+    &:hover, &:active{
+      .main-menu__check {
+        margin-right: 0;
+      }
+
+      .main-menu__icocheck {
+        transform: rotate(0deg);
+        transition: transform 1s;
+      }
+    }
   }
 
   &__icoheart {
@@ -240,6 +252,16 @@ p,
     padding-left: 20px;
     padding-right: 20px;
     min-width: 0;
+    &:hover, &:active{
+      .main-menu__check {
+        margin-right: 0;
+      }
+
+      .main-menu__icocheck {
+        transform: rotate(0deg);
+        transition: transform 1s;
+      }
+    }
   }
 
   &__subname {
