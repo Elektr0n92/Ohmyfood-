@@ -45,12 +45,12 @@ p,
   align-items: center;
   justify-content: center;
   text-align: center;
-  animation-delay: 3s;
+  animation-delay: 2.5s;
 
   &__text {
     font-size: 100px;
     color: $purple-btn;
-    animation: spin 3s;
+    animation: spin 2s;
   }
 }
 
@@ -222,6 +222,10 @@ p,
     &--delay8{
       animation-delay: 2.4s;
     }
+
+    &--delay9{
+      animation-delay: 2.7s;
+    }
   }
 
   &__headline {
@@ -276,6 +280,7 @@ p,
     align-items: flex-end;
     font-size: clamped(12px, 24px, 500px, 2560px);
     font-weight: bolder;
+    padding-left: 20px;
   }
 
   &__check {

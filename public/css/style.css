@@ -262,12 +262,12 @@ p,
   align-items: center;
   justify-content: center;
   text-align: center;
-  animation-delay: 3s;
+  animation-delay: 2.5s;
 }
 .loading__text {
   font-size: 100px;
   color: #9356dc;
-  animation: spin 3s;
+  animation: spin 2s;
 }
 
 /* FUNCT MAIN & REST MAIN */
@@ -444,6 +444,9 @@ p,
 .main-menu__block--delay8 {
   animation-delay: 2.4s;
 }
+.main-menu__block--delay9 {
+  animation-delay: 2.7s;
+}
 .main-menu__headline {
   display: flex;
   justify-content: space-between;
@@ -501,6 +504,7 @@ p,
   align-items: flex-end;
   font-size: clamp(0.75rem, 0.58vw + 0.57rem, 1.5rem);
   font-weight: bolder;
+  padding-left: 20px;
 }
 .main-menu__check {
   width: 150px;
