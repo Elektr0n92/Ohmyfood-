@@ -252,7 +252,7 @@ a {
 
 h1,
 h2 {
-  font-family: "Roboto", sans serif;
+  font-family: "Roboto", sans-serif;
   font-size: 40px;
   margin: 0;
   font-weight: 600;
@@ -261,7 +261,7 @@ h2 {
 
 p,
 .first-preview__btn {
-  font-family: "Roboto", sans serif;
+  font-family: "Roboto", sans-serif;
   font-size: clamp(0.75rem, 0.568rem + 0.5825vw, 1.5rem);
 }
 
@@ -745,7 +745,7 @@ p,
   font-weight: 900;
 }
 .rest-main__subtitle--menu {
-  font-family: "Roboto", sans serif;
+  font-family: "Roboto", sans-serif;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
