@@ -93,7 +93,7 @@
   
   &__sc {
     background-color: whitesmoke;
-    padding: 40px 60px;
+    padding: 40px 30px;
     gap: 10px;
     @include flex-center($direction: column);
     text-align: center;
@@ -101,6 +101,7 @@
     a {
       text-decoration: none;
     }
+
   }
 
   &__reserve {
@@ -108,12 +109,24 @@
       margin: 0;
       font-size: clamped(30px, 45px, 500px, 2560px);
     }
+
+    &--break{
+      @include mobile-vp{
+        display: block;
+      }
+    }
   }
 
   &__decouvre {
     color: dimgray;
     p{
       font-size: clamped(20px, 30px, 500px, 2560px);
+    }
+
+    &--break{
+      @include mobile-vp{
+        display: block;
+      }
     }
   }
 

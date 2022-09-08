@@ -132,7 +132,7 @@
 }
 .first-preview__sc {
   background-color: whitesmoke;
-  padding: 40px 60px;
+  padding: 40px 30px;
   gap: 10px;
   display: flex;
   align-items: center;
@@ -147,11 +147,21 @@
   margin: 0;
   font-size: clamp(1.88rem, 0.73vw + 1.65rem, 2.81rem);
 }
+@media screen and (max-width: 768px) {
+  .first-preview__reserve--break {
+    display: block;
+  }
+}
 .first-preview__decouvre {
   color: dimgray;
 }
 .first-preview__decouvre p {
   font-size: clamp(1.25rem, 0.49vw + 1.1rem, 1.88rem);
+}
+@media screen and (max-width: 768px) {
+  .first-preview__decouvre--break {
+    display: block;
+  }
 }
 .first-preview__btn {
   display: flex;
