@@ -93,7 +93,7 @@
   
   &__sc {
     background-color: whitesmoke;
-    padding: 40px 60px;
+    padding: 40px 30px;
     gap: 10px;
     @include flex-center($direction: column);
     text-align: center;
@@ -101,12 +101,19 @@
     a {
       text-decoration: none;
     }
+
   }
 
   &__reserve {
     h1 {
       margin: 0;
       font-size: clamped(30px, 45px, 500px, 2560px);
+    }
+
+    &--break{
+      @include mobile-vp{
+        display: block;
+      }
     }
   }
 
@@ -115,16 +122,22 @@
     p{
       font-size: clamped(20px, 30px, 500px, 2560px);
     }
+
+    &--break{
+      @include mobile-vp{
+        display: block;
+      }
+    }
   }
 
   &__btn {
     @include flex-center;
-    height: 40px;
     border-radius: 45px;
+    height: 15px;
     border: none;
     cursor: pointer;
     color: white;
-    padding: clamped(15px, 29px, 500px, 2560px);
+    padding: clamped(10px, 20px, 500px, 2560px);
     font-size: 20px;
     @include gradient-btn;
     @include shadow-btn;
