@@ -212,7 +212,7 @@
 }
 @media screen and (max-width: 768px) {
   .last-preview__list {
-    justify-content: baseline;
+    justify-content: flex-start;
     flex-flow: column nowrap;
     align-items: flex-start;
     padding: 0;
