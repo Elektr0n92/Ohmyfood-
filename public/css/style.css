@@ -629,10 +629,10 @@ p,
   }
 }
 .funct-main__block--purple {
-  background: rgba(146, 86, 220, 0.2588235294);
+  background: rgba(146, 86, 220, 0.1);
 }
 .funct-main__block--purple:hover {
-  background: rgba(201, 171, 238, 0.2588235294);
+  background: rgba(201, 171, 238, 0.1);
 }
 .funct-main__block p {
   font-weight: 600;

@@ -361,7 +361,7 @@ p,
     }
 
     &--purple {
-      @include lightness($little-pink);
+      @include lightness(rgba(146, 86, 220, 0.10));
     }
 
     p {
