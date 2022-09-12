@@ -297,10 +297,11 @@ p,
   &__btn {
     @include btn;
     font-size: clamped(10px, 20px, 500px, 2560px);
-  }
+  
   &:hover {
     @include shadow-btn-hover;
   }
+}
 }
 
 /* FUNCT MAIN */
