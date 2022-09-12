@@ -420,6 +420,7 @@ p,
   cursor: pointer;
   opacity: 0;
   animation-fill-mode: both;
+  background-color: white;
 }
 .main-menu__block:hover {
   background: white;
