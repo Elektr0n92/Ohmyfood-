@@ -87,7 +87,7 @@ p,
     margin-right: 50px;
   }
 
-  @include mobile-small-vp {
+  @include mobile-vp {
     margin-left: 0;
     margin-right: 0;
   }
