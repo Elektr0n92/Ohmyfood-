@@ -87,7 +87,7 @@ p,
     margin-right: 50px;
   }
 
-  @include mobile-small-vp {
+  @include mobile-vp {
     margin-left: 0;
     margin-right: 0;
   }
@@ -165,6 +165,7 @@ p,
     cursor: pointer;
     opacity: 0;
     animation-fill-mode: both;
+    background-color: white;
 
     &:hover,
     &:active {
@@ -297,7 +298,11 @@ p,
   &__btn {
     @include btn;
     font-size: clamped(10px, 20px, 500px, 2560px);
+  
+  &:hover {
+    @include shadow-btn-hover;
   }
+}
 }
 
 /* FUNCT MAIN */
